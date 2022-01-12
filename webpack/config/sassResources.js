@@ -1,5 +1,5 @@
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  * Resource list for sass-resource-loader
  * @see https://github.com/shakacode/sass-resources-loader
  * @example

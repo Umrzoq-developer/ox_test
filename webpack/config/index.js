@@ -1,5 +1,5 @@
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  */
 export * from './alias';
 export * from './devServer';

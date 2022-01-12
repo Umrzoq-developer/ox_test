@@ -1,5 +1,5 @@
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  */
 export const arrayFilterEmpty = (array) => array.filter((x) => !!x);
 

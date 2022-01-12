@@ -1,5 +1,5 @@
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  * Reconfigure default HMR behavior, now it clears your console on every
  * codebase update
  */

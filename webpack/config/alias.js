@@ -1,5 +1,5 @@
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  * @see https://webpack.js.org/configuration/dev-server/
  */
 import {join} from 'path';

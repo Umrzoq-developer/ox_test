@@ -1,5 +1,5 @@
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  * @see https://webpack.js.org/configuration/dev-server/
  */
 
@@ -13,6 +13,7 @@ export const devServerConfig = {
     historyApiFallback: true,
     hot: true,
     proxy: devServerProxyConfig,
+    port: 3000,
     static: {
         publicPath: '/',
     },

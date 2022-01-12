@@ -1,7 +1,7 @@
 import {DefinePlugin} from 'webpack';
 
 /**
- * Created by: Andrey Polyakov (andrey@polyakov.im)
+ * Created by: Umrzoq Toshkentov ()
  * @example
  * const config = {
  *     isProd: true
