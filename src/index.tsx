@@ -12,6 +12,7 @@ import ReactDom from 'react-dom';
 import {QueryClient, QueryClientProvider} from 'react-query';
 import {BrowserRouter} from 'react-router-dom';
 
+// import {App} from '@components/app/app';
 import {App} from '@components/app/app';
 
 const queryClient = new QueryClient();

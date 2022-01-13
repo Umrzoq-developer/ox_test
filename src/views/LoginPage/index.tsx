@@ -3,6 +3,8 @@ import React, {useRef, useState} from 'react';
 
 import useLogin from '@src/api_requests/useLogin';
 
+import Ab from './Ab';
+import Bc from './Bc';
 import styles from './index.module.scss';
 
 interface IProps {
@@ -12,21 +14,30 @@ interface IProps {
 
 const LoginPage = () => {
     const {handleEnter} = useLogin();
+    const [state, setState] = useState(false);
 
-    const onFinish = (values: any) => {
-        console.log('Success:', values);
-        handleEnter.mutate({...values, subdomain: 'toto'});
-    };
+    // const onFinish = (values: any) => {
+    //     console.log('Success:', values);
+    //     handleEnter.mutate({...values, subdomain: 'toto'});
+    // };
 
-    const onFinishFailed = (errorInfo: any) => {
-        console.log('Failed:', errorInfo);
+    // const onFinishFailed = (errorInfo: any) => {
+    //     console.log('Failed:', errorInfo);
+    // };
+
+    const handleClick = () => {
+        console.log('clicked');
+        setState(!state);
     };
 
     return (
         <div className={styles.loginContainer}>
             <div className={styles.boxContainer}>
                 <h3>Login page</h3>
-                <Form
+                <Ab />
+                <Bc handleClick={handleClick} />
+
+                {/* <Form
                     name="basic"
                     labelCol={{span: 8}}
                     wrapperCol={{span: 16}}
@@ -66,7 +77,7 @@ const LoginPage = () => {
                             Submit
                         </Button>
                     </Form.Item>
-                </Form>
+                </Form> */}
             </div>
         </div>
     );

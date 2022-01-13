@@ -11,6 +11,8 @@ import * as rules from './rules';
 import {isDevServer, isProd} from './utils/env';
 import {arrayFilterEmpty} from './utils/helpers';
 
+require('dotenv').config();
+
 export default {
     context: __dirname,
     target: isDevServer ? 'web' : ['web', 'es5'],
