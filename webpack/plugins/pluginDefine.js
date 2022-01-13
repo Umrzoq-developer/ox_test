@@ -12,6 +12,7 @@ import {isDev, isDevServer, isProd, mode} from '../utils/env';
 const config = {
     'process.env': {
         NODE_ENV: JSON.stringify(mode),
+        BASE_API_URL: JSON.stringify(BASE_API_URL),
     },
     IS_PROD: isProd,
     IS_DEV: isDev,
