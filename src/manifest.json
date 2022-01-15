@@ -1,7 +1,13 @@
 {
     "short_name": "Main Application",
     "name": "Main App",
-    "icons": [],
+    "icons": [
+        {
+            "src": "https://img.icons8.com/ios-glyphs/30/ffffff/home.png",
+            "type": "image/png",
+            "sizes": "256x256"
+        }
+    ],
     "start_url": "../",
     "display": "standalone",
     "theme_color": "#27ae60",
