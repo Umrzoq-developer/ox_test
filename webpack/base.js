@@ -45,6 +45,7 @@ export default {
         plugins.forkTsCheckerWebpackPlugin,
         plugins.esLintPlugin,
         plugins.copyPlugin,
+        plugins.pwaWorkbox,
     ]),
     resolve: {
         alias: aliasItems,

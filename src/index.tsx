@@ -15,6 +15,8 @@ import {BrowserRouter} from 'react-router-dom';
 // import {App} from '@components/app/app';
 import {App} from '@components/app/app';
 
+import * as serviceWorker from './service-worker';
+
 const queryClient = new QueryClient();
 
 ReactDom.render(
@@ -25,3 +27,18 @@ ReactDom.render(
     </QueryClientProvider>,
     document.getElementById('root'),
 );
+
+serviceWorker.register();
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        navigator.serviceWorker
+            .register('/service-worker.js')
+            .then((registration) => {
+                console.log('SW registered: ', registration);
+            })
+            .catch((registrationError) => {
+                console.log('SW registration failed: ', registrationError);
+            });
+    });
+}
